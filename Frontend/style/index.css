@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: sans-serif;
+  background: url('../imagens/index.jpeg') center/cover no-repeat;
+  color: #fff;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Seção de saudação */
+#saudacao {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+}
+
+#saudacao h2 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+#saudacao p {
+  font-size: 1.5rem;
+}
+
+/* --- Responsividade --- */
+
+/* Telas até 1024px (tablets e notebooks pequenos) */
+@media (max-width: 1024px) {
+  #saudacao h2 {
+    font-size: 2.5rem;
+  }
+  #saudacao p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Telas até 768px (tablets verticais e celulares grandes) */
+@media (max-width: 768px) {
+  #saudacao {
+    padding: 50px 15px;
+  }
+  #saudacao h2 {
+    font-size: 2rem;
+  }
+  #saudacao p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Telas até 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  #saudacao {
+    padding: 40px 10px;
+  }
+  #saudacao h2 {
+    font-size: 1.6rem;
+  }
+  #saudacao p {
+    font-size: 1rem;
+  }
+}
+
+/* Telas até 360px (celulares muito pequenos) */
+@media (max-width: 360px) {
+  #saudacao h2 {
+    font-size: 1.4rem;
+  }
+  #saudacao p {
+    font-size: 0.9rem;
+  }
+}

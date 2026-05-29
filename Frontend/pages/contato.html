@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato — Site de Vagas Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Página -->
+    <link rel="stylesheet" href="../style/contato.css">
+    <!-- CSS Navbar e Footer -->
+    <link rel="stylesheet" href="../style/navbar-footer.css">
+</head>
+
+<body>
+
+    <!-- Header Novo -->
+    <header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
+
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <input type="checkbox" id="user-toggle">
+
+            <label for="user-toggle" class="user"></label>
+
+            <label for="user-toggle" class="overlay"></label>
+            
+            <div class="dropdown">
+                <a href="login.html" id="btnLogin">Log In</a>
+                <a href="area-logada.html" id="btnPerfil">Perfil</a>
+                <a href="#" id="btnSair" onclick="logout()">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="main-content">
+        <h1 class="section-title"> Entre em Contato</h1>
+        <div class="form-card">
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" placeholder="Digite o assunto" required>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <div class="hero">
+            <p class="lead"><strong>Email:</strong> contato@plataformaempregos.com</p>
+            <p class="lead"><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p class="lead"><strong>Endereço:</strong> Rua Exemplo, 123 - São Paulo/SP</p>
+        </div>
+    </main>
+
+    <!-- Novo Footer -->
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
+    
+    <script src="../js/app.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+
+</html>

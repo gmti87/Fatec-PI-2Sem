@@ -1,0 +1,736 @@
+.header-pi {
+    height: 12vh;
+    background-color: #b20000;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* cabeçalho - lado esquerdo - logo */
+
+.header-pi-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-pi-logo img {
+    width: 100px;
+    height: 100%;
+}
+
+.header-pi-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* esconde checkbox */
+#user-toggle {
+    display: none;
+}
+
+/* overlay (clique fora) */
+.overlay {
+    display: none;
+
+    position: fixed; /* CORRIGIDO */
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: transparent;
+
+    z-index: 10;
+}
+
+/* ícone usuário */
+.user {
+    display: block;
+
+    width: clamp(35px, 4vw, 60px);
+    height: clamp(35px, 4vw, 60px);
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    position: relative;
+    cursor: pointer;
+}
+
+/* cabeça */
+.user::before {
+    content: "";
+
+    width: 40%;
+    height: 40%;
+
+    background: #b20000;
+    border-radius: 50%;
+
+    position: absolute;
+
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* corpo */
+.user::after {
+    content: "";
+
+    width: 60%;
+    height: 30%;
+
+    background: #b20000;
+
+    border-radius: 20px 20px 0 0;
+
+    position: absolute;
+
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* dropdown */
+.dropdown {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 110%;
+
+    background: white;
+    min-width: 160px;
+
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    overflow: hidden;
+
+    z-index: 20;
+}
+
+/* links */
+.dropdown a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background: #f2f2f2;
+}
+
+/* abre menu */
+#user-toggle:checked ~ .dropdown {
+    display: block;
+}
+
+#user-toggle:checked ~ .overlay {
+    display: block;
+}
+
+/* cabeçalho - lado direito - menu */
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+.menu a:hover {
+    font-size: 2.2rem;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* meio da página 
+
+.main-page-pi {
+    min-height: 76vh;
+}
+
+.main-page-pi img {
+    width: 100%;
+    height: 76vh;
+    object-position: center;
+    display: block;
+}
+
+/* rodapé */
+
+.footer-pi {
+    height: 12vh;
+    background-color: #b20000;
+
+    /* Atualização do footer responsivo */
+    /* margin-top: 9.8vh; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-pi p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+/* Teste Responsividade */
+
+/* Novo */
+
+@media (min-width: 240px) and (max-width: 360px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    .header-pi-title {
+        font-size: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    /* Menu fechado */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: fixed;
+        /* fica fixo na tela */
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        padding: 5px 0;
+        overflow: hidden;
+    }
+
+    /* Menu aberto */
+    #menu-toggle:checked+.menu-icon+.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        /* ocupa parte menor da tela */
+        overflow-y: auto;
+        /* permite rolar DENTRO do menu se precisar */
+    }
+
+    /* Itens do menu */
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap;
+        /* não quebra “Depoimentos” */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* se faltar espaço, mostra “…” */
+    }
+
+    .menu a:hover {
+        opacity: 0.8;
+    }
+
+    /* Impede o scroll da página ao abrir o menu */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .footer-pi p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    .header-pi-title {
+        font-size: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    /* Menu fechado */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: fixed;
+        /* fica fixo na tela */
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        padding: 5px 0;
+        overflow: hidden;
+    }
+
+    /* Menu aberto */
+    #menu-toggle:checked+.menu-icon+.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        /* ocupa parte menor da tela */
+        overflow-y: auto;
+        /* permite rolar DENTRO do menu se precisar */
+    }
+
+    /* Itens do menu */
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap;
+        /* não quebra “Depoimentos” */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* se faltar espaço, mostra “…” */
+    }
+
+    .menu a:hover {
+        opacity: 0.8;
+    }
+
+    /* Impede o scroll da página ao abrir o menu */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .footer-pi p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .header-pi-logo img {
+        width: 100px;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    .header-pi-title {
+        font-size: 1.4rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    /* Menu fechado */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: fixed;
+        /* fica fixo na tela */
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        padding: 5px 0;
+        overflow: hidden;
+    }
+
+    /* Menu aberto */
+    #menu-toggle:checked+.menu-icon+.menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        /* ocupa parte menor da tela */
+        overflow-y: auto;
+        /* permite rolar DENTRO do menu se precisar */
+    }
+
+    /* Itens do menu */
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap;
+        /* não quebra “Depoimentos” */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* se faltar espaço, mostra “…” */
+    }
+
+    .menu a:hover {
+        opacity: 0.8;
+    }
+
+    /* Impede o scroll da página ao abrir o menu */
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .footer-pi p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px) {
+    .footer-pi p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 840px) {
+    .footer-pi p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 960px) {
+    .menu a {
+        font-size: 1.5rem;
+    }
+
+    .manu a:hover {
+        font-size: 1.8rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 961px) and (max-width: 1080px) {
+    .footer-pi p {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1080) {
+    .footer-pi p {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Antigo 
+@media (min-width: 111px) and (max-width: 134px) {
+    .header-pi-logo img {
+        width: 30px;
+        height: 10%;
+        margin-left: -5px;
+    }
+
+    /* ajustar para telas 86px 
+
+    .header-pi-title {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-pi p {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 135px) and (max-width: 170px) {
+    .header-pi-logo img {
+        width: 50px;
+        height: 100%;
+        margin-left: -5px;
+    }
+
+    .header-pi-title {
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-pi p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 171px) and (max-width: 240px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+        margin-left: -10px;
+    }
+
+    .header-pi-title {
+        font-size: 1rem;
+    }
+
+    .footer-pi p {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 241px) and (max-width: 360px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 100%;
+    }
+
+    .header-pi-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-pi p {
+        font-size: 0.25rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+    /* Ícone do menu 
+    .menu-icon {
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        z-index: 1000;
+    }
+
+    /* Menu fechado 
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: fixed; /* fica fixo na tela 
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 999;
+        padding: 5px 0;
+        overflow: hidden;
+    }
+
+    /* Menu aberto 
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh; /* ocupa parte menor da tela 
+        overflow-y: auto; /* permite rolar DENTRO do menu se precisar
+    }
+
+    /* Itens do menu 
+    .menu a {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        white-space: nowrap; /* não quebra “Depoimentos” 
+        overflow: hidden;
+        text-overflow: ellipsis; /* se faltar espaço, mostra “…” 
+    }
+
+    .menu a:hover {
+        opacity: 0.8;
+    }
+
+    /* Impede o scroll da página ao abrir o menu 
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    .footer-pi p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #b20000;
+        position: absolute;
+        top: 12vh;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        padding: 10px 0;
+        font-size: 1rem;
+        display: block;
+    }
+
+    .menu a:hover {
+        font-size: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 0.9rem;
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        right: 10px;
+        top: 22px;
+    }
+
+    #menu-toggle:checked+.menu-icon+.menu {
+        display: flex;
+    }
+
+    .footer-pi p {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 80%;
+    }
+
+    .header-pi-title {
+        font-size: 1.1rem;
+    }
+
+    .menu a {
+        font-size: 1.1rem;
+    }
+
+    .menu a:hover {
+        font-size: 1.4rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 720px) {
+    .header-pi-logo img {
+        width: 80px;
+        height: 80%;
+    }
+
+    .header-pi-title {
+        font-size: 1.2rem;
+    }
+
+    .menu a {
+        font-size: 1.2rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 721px) and (max-width: 840px) {
+    .header-pi-logo img {
+        width: 90px;
+        height: 90%;
+    }
+
+    .menu a {
+        font-size: 1.4rem;
+    }
+
+    .footer-pi p {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 841px) and (max-width: 960px) {
+    .footer-pi p {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
+
+*/

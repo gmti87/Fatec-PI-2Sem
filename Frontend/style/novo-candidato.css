@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.novo-candidato {
+    height: 76vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.new-usr {
+    /* border: 1px solid red; */
+    margin: 5px;
+}
+
+legend {
+    margin: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.usr-data {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 8px;
+}
+
+.usr-data-i {
+    width: 300px;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
+.usr-pwd {
+    width: 100px;
+    margin: 5px;
+    font-size: 1.1;
+}
+
+.usr-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-salvar, .btn-cancelar {
+    padding: 5px;
+}

@@ -1,0 +1,154 @@
+/* Fonte sans-serif geral */
+:root{
+  --primary: #b20000; /* cor principal */
+  --nav: #b20000; /* header / destaque */
+  --bg: #f7f7f8; /* fundo claro */
+  --card: #ffffff;
+  --muted: #6b6b6b;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin:0;
+  background:var(--bg);
+  color:#222;
+  -webkit-font-smoothing:antialiased;
+}
+
+.container{
+  width:min(1100px,94%);
+  margin:0 auto;
+  position:relative;
+  z-index:1;
+}
+
+.site-header{
+  background:var(--nav);
+  color:#fff;
+  padding:16px 0;
+  margin-bottom:28px;
+}
+.header-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+
+.logo{font-weight:700;font-size:20px}
+
+.main-nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:18px}
+
+.main-nav a.active{color:var(--primary);font-weight:700}
+
+.page-header{padding:18px 0;text-align:center}
+
+.page-title{color:var(--nav);font-size:32px;margin:8px 0}
+
+.filters{
+  display:flex;
+  gap:12px;
+  margin-bottom:22px;
+}
+.filters input, .filters select{
+  padding:10px 12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  flex:1;
+}
+
+.jobs-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:16px;
+}
+.job-card{
+  background:var(--card);
+  border-radius:10px;
+  padding:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.job-card h2{margin:0;font-size:18px;color:var(--nav)}
+.job-card .meta{color:var(--muted);font-size:13px}
+.job-card .job-list{margin:6px 0 0 0;padding-left:18px;color:#333}
+.job-card p{margin:0 0 8px 0;color:#333}
+.apply{
+  margin-top:auto;
+  display:inline-block;
+  background:var(--primary);
+  color:#fff;
+  padding:10px 12px;
+  border-radius:8px;
+  text-decoration:none;
+}
+.apply:focus, .apply:hover{opacity:0.95;transform:translateY(-1px)}
+
+.site-footer{
+  text-align:center;
+  padding:18px 0;
+  color:#fff;
+  margin-top:26px;
+  background:var(--nav);
+  box-shadow:0 -2px 6px rgba(0,0,0,0.06);
+}
+
+.site-footer a{color:rgba(255,255,255,0.95);text-decoration:underline}
+.site-footer .footer-inner{width:100%;}
+
+@media (max-width:480px){
+  .site-header h1{font-size:20px}
+  .filters{flex-direction:column}
+}
+
+/* Responsividade adicional */
+@media (max-width:900px){
+  .container{width:min(940px,96%)}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
+  .main-nav{width:100%;display:flex;justify-content:flex-end;gap:14px}
+  .main-nav a{margin-left:0;padding:8px 10px;border-radius:6px}
+  .page-title{font-size:28px}
+  .jobs-grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+}
+
+@media (max-width:700px){
+  .header-inner{align-items:center}
+  .main-nav{justify-content:center;flex-wrap:wrap}
+  .filters{flex-direction:column}
+  .filters input, .filters select{width:100%}
+  .page-title{font-size:24px}
+  .jobs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .job-card{padding:14px}
+  .apply{padding:12px;border-radius:10px}
+}
+
+@media (max-width:480px){
+  .container{width:94%;padding-left:8px;padding-right:8px}
+  .main-nav{justify-content:center}
+  .main-nav a{display:inline-block;padding:10px 12px}
+  .page-title{font-size:20px;margin-top:8px}
+  .jobs-grid{grid-template-columns:1fr;gap:12px}
+  .job-card{padding:12px}
+  .job-card h2{font-size:16px}
+  .filters{gap:8px}
+  .filters input, .filters select{padding:10px}
+}
+
+/* Melhoras para toque (botões maiores em geral) */
+.apply{min-width:140px;text-align:center}
+
+/* Imagem de fundo opcional fornecida pelo usuário
+   Coloque o arquivo em: images/bg.jpg
+   Se o arquivo não existir, nada será exibido e o fundo atual (var(--bg)) permanecerá. */
+body{
+  /* Aponta para o arquivo que já existe na pasta images */
+  /* background-image: url('../imagens/imagesvagas.jpg'); */
+  background-image: url('../imagens/vagas.jpg');
+  /* background-image: url('images/images.jpg'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
