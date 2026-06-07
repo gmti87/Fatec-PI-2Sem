@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.main-usuario {
+    height: 68.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usr-candidato, .usr-recrutador, .usr-especialista {
+    height: 300px;
+    width: 300px;
+    display: inline-flex;
+    margin: 10px;
+}
+
+.usr-candidato img, .usr-recrutador img, .usr-especialista img {
+    height: 100%;
+    width: 100%;
+}
+
+.usr-candidato a, .usr-recrutador a, .usr-especialista a {
+    text-decoration: none;
+    color: black;
+}
+
+.usr-candidato span, .usr-recrutador span, .usr-especialista span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

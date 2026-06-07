@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+.main-usr {
+    /* height: 76vh; */
+    background-color: #ccd;
+}
+.form-usr {
+    /* border: 1px solid black; */
+    margin: 5px;
+}
+
+.form-usr legend {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 8px;
+}
+
+.usr-data-al {
+    /* border: 1px solid red; */
+    padding: 6px;
+}
+
+.usr-select-al {
+    text-align: center;
+    width: 150px;
+}
+
+.usr-status {
+    display: flex;
+    gap: 10px;
+}
+
+.usr-btns-al {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-usr-save, .btn-usr-update, .btn-usr-remove {
+    padding: 8px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background-color: blue;
+    color: white;
+}
