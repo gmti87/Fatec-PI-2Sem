@@ -1,3 +1,3 @@
 function cancelNewuser() {
-    window.location.href = "../../pages/escolha-usuario.html";
+    window.location.href = "/../pages/escolha-usuario.html";
 }
