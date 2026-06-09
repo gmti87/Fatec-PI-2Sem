@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d4d4d4;
+}
+
+.main-login {
+    height: 76vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login {
+    /* border: 1px solid black; */
+    gap: 10px;
+}
+
+.form-login legend {
+    margin: 5px 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.usr-login input, .usr-pwd input {
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+    width: 250px;
+}
+
+.btnSNC {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.btnLogin, .btnNC, .btnNewPwd {
+    background-color: blue;
+    border-radius: 8px;
+    color: white;
+    padding: 8px;
+}
+
+.btnES {
+    display: flex;
+    justify-content: center;
+    align-items: cneter;
+    margin: 5px 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+

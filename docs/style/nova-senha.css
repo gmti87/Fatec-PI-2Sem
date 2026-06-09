@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-senha {
+    height: 76vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .form-senha {
+    border: 1px solid black;
+} */
+
+.form-senha legend {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.form-email {
+    margin: 10px 0px;
+}
+
+.form-email input {
+    margin-top: 10px;
+}
+
+.input-email {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.btn-Enviar {
+    background-color: blue;
+    width: 80px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    padding: 8px;
+    text-align: center;
+
+    color: white;
+    
+    margin-left: 305px;
+}
+
+.btn-Enviar a {
+    color: white;
+    text-decoration: none;
+}

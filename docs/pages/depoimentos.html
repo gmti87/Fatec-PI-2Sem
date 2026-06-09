@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Depoimentos — Site de Vagas Tech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Página -->
+    <link rel="stylesheet" href="../style/depoimentos.css">
+    <!-- CSS Navbar e Footer -->
+    <link rel="stylesheet" href="../style/navbar-footer.css">
+</head>
+
+<body>
+    <!-- Novo Cabeçalho -->
+<header class="header-pi">
+        <div class="header-pi-logo">
+            <img src="../imagens/teste-logo-3.png" alt="Computador / Arquivos">
+            <p class="header-pi-title">
+                <span class="projeto">Projeto</span>
+                <span class="fatec">Fatec</span>
+            </p>
+        </div>
+
+        <div class="header-pi-menu">
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <nav class="menu">
+                <a href="../index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="contato.html">Contato</a>
+                <a href="vagas.html">Vagas</a>
+                <a href="depoimentos.html">Depoimentos</a>
+            </nav>
+        </div>
+
+        <div class="user-menu">
+            <input type="checkbox" id="user-toggle">
+
+            <label for="user-toggle" class="user"></label>
+
+            <label for="user-toggle" class="overlay"></label>
+            
+            <div class="dropdown">
+                <a href="login.html" id="btnLogin">Log In</a>
+                <a href="area-logada.html" id="btnPerfil">Perfil</a>
+                <a href="#" id="btnSair" onclick="logout()">Sair</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mudando Header para div -->
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <h2 class="section-title">Depoimentos</h2>
+            <p class="lead">Histórias inspiradoras de pessoas que transformaram suas carreiras com oportunidades reais
+                em tecnologia — trajetórias que mostram como uma vaga certa pode mudar tudo.</p>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="testimonials">
+            <article class="card">
+                <p class="quote">"Encontrei meu primeiro estágio em Front-end usando as vagas do site. Foi uma
+                    experiência transformadora — aprendi muito e fui efetivada depois de 6 meses."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Ana Santos</strong>
+                        <span class="role">Estagiária de Front-end</span>
+                    </div>
+                    <time datetime="2024-08-12">12/08/2024</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"Com a orientação das vagas direcionadas, consegui uma posição júnior em backend. O
+                    processo seletivo foi ágil e transparente."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Bruno Oliveira</strong>
+                        <span class="role">Desenvolvedor Backend Júnior</span>
+                    </div>
+                    <time datetime="2025-01-22">22/01/2025</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"Fiz contato com empresas na área de dados e, em menos de um mês, fui chamado para
+                    entrevista. Hoje trabalho como Analista de Dados."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Carla Mendes</strong>
+                        <span class="role">Analista de Dados</span>
+                    </div>
+                    <time datetime="2024-11-05">05/11/2024</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"Plataforma com ótimas vagas e filtros inteligentes — encontrei um emprego remoto em
+                    engenharia de software que mudou minha rotina."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Diego Ribeiro</strong>
+                        <span class="role">Engenheiro de Software</span>
+                    </div>
+                    <time datetime="2023-10-30">30/10/2023</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"O suporte e as dicas de currículo foram essenciais. Consegui um estágio em UX/UI e já
+                    estou trabalhando em projetos reais."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Érika Carvalho</strong>
+                        <span class="role">Estagiária em UX/UI</span>
+                    </div>
+                    <time datetime="2025-03-14">14/03/2025</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"A curadoria de vagas para iniciantes fez toda a diferença. Passei de freelancer para
+                    CLT em uma empresa que admiro."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Fábio Lima</strong>
+                        <span class="role">Desenvolvedor Fullstack</span>
+                    </div>
+                    <time datetime="2024-06-18">18/06/2024</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"Usei as dicas de currículo e a plataforma para encontrar vagas alinhadas ao meu
+                    perfil. Em duas semanas, fui chamado para entrevista e hoje sou Dev Junior."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Gabriela Ferreira</strong>
+                        <span class="role">Desenvolvedora Front-end Júnior</span>
+                    </div>
+                    <time datetime="2025-07-02">02/07/2025</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"As vagas remotas facilitavam conciliar meus estudos. Consegui um estágio em Data
+                    Science e aprendi a trabalhar com projetos reais."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Lucas Andrade</strong>
+                        <span class="role">Estagiário em Data Science</span>
+                    </div>
+                    <time datetime="2024-12-10">10/12/2024</time>
+                </div>
+            </article>
+
+            <article class="card">
+                <p class="quote">"A plataforma tinha várias oportunidades para quem busca transição de carreira. Passei
+                    de suporte técnico para Analista de QA."</p>
+                <div class="meta">
+                    <div>
+                        <strong>Mariana Souza</strong>
+                        <span class="role">Analista de QA</span>
+                    </div>
+                    <time datetime="2025-02-11">11/02/2025</time>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer Novo -->
+    <footer class="footer-pi">
+        <p>2025 - Fatec Franca - DSM - Projeto Interdisciplinar &copy;</p>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script src="../js/logout.js"></script>
+
+</body>
+
+</html>
