@@ -14,5 +14,5 @@ function enviarRecuperacao() {
     alert("Email de recuperação enviado com sucesso!");
 
     // salva email se quiser
-    localStorage.setItem("emailRecuperacao", email);
+    //localStorage.setItem("emailRecuperacao", email);
 }
