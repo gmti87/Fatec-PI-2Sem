@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Visual - Identidade de Marca (Projeto Fatec)</title>
+    <style>
+       
+        :root {
+            --cor-primaria: #B20000; 
+            --cor-fundo-claro: #FFFFFF; 
+            --cor-texto-principal: #000000; 
+            --cor-azul-claro: #447bc4; 
+            --cor-azul-escuro: rgb(3, 24, 54); 
+            --cor-cinza-claro: #747577; 
+            --cor-borda-menu: #DDDDDD;
+        }
+
+        body {
+            font-family: sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-claro);
+            color: var(--cor-texto-principal);
+        }
+
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        .sidebar {
+            width: 280px;
+            background-color: var(--cor-fundo-claro); 
+            padding: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+            border-right: 1px solid var(--cor-borda-menu);
+        }
+
+        .sidebar h2 {
+            color: var(--cor-texto-principal);
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--cor-primaria); 
+            padding-bottom: 5px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: var(--cor-texto-principal);
+            padding: 10px 0;
+            font-size: 0.95em;
+            transition: all 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .sidebar .active {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            background-color: #ffebeb; 
+            padding: 10px 10px;
+            margin: 0 -10px;
+            border-radius: 4px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 40px 60px;
+            background-color: #f8f8f8; 
+        } 
+
+        .content h1 {
+            font-size: 2em;
+            color: var(--cor-texto-principal);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--cor-borda-menu);
+        }
+
+        
+        .color-section {
+            margin-bottom: 40px;
+        }
+
+        .color-section h3 {
+            color: var(--cor-texto-principal);
+            font-size: 1.3em;
+            border-left: 4px solid var(--cor-primaria);
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+
+        .color-blocks {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .color-block {
+            width: 220px;
+            height: 150px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: white; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        
+        .vermelho-principal { 
+            background-color: var(--cor-primaria); 
+            color: var(--cor-fundo-claro); 
+        }
+        .branco-fundo { 
+            background-color: var(--cor-fundo-claro); 
+            color: var(--cor-texto-principal); 
+            border: 1px solid #eee; 
+        }
+        .preto-texto { 
+            background-color: var(--cor-texto-principal); 
+            color: var(--cor-fundo-claro); 
+        }
+        
+        .azul-claro { 
+            background-color: var(--cor-azul-claro); 
+            color: var(--cor-fundo-claro); 
+        }
+        
+        .azul-escuro { 
+            background-color: var(--cor-azul-escuro); 
+            color: var(--cor-fundo-claro); 
+        }
+        
+        
+        .cinza-claro {
+            background-color: var(--cor-cinza-claro); 
+            color: var(--cor-fundo-claro); 
+            border: 1px solid #666; 
+        }
+
+        .hex-code {
+            margin-top: 5px;
+            font-size: 0.9em;
+            font-weight: normal;
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h4>PLATAFORMA DE EMPREGOS</h4>
+            
+            <p style="text-transform: uppercase; font-size: 0.8em; color: var(--cor-azul-claro);">Estrutura</p>
+            <a href="index.html">Nosas Cores</a>
+            <a href="proposito.html">Propósito</a>
+            <a href="motivacoes.html"> Motivações</a>
+            <a href="documentacao.html">Documentação</a>
+            <a href="alunos.html">Alunos Responsáveis</a>
+            
+           
+        </div>
+
+        <div class="content">
+            <h1 id="paleta">NOSSAS CORES</h1>
+
+                <br>
+                <br>
+            <div class="color-section">
+                <h3 id="principais">Cores Principais</h3>
+                <div class="color-blocks">
+                    <div class="color-block vermelho-principal">
+                        Vermelho 
+                        <span class="hex-code">#B20000</span>
+                    </div>
+                    <div class="color-block branco-fundo">
+                        Branco 
+                        <span class="hex-code">#FFFFFF</span>
+                    </div>
+                    <div class="color-block preto-texto">
+                        Preto 
+                        <span class="hex-code">#000000</span>
+                    </div>
+                </div>
+            </div>
+            Usamos vermelho como cor principal, no cabeçalho e rodapé, branco de fundo nos containers com escrita em cinza escuro, branco no texto em que a imagem de fundo é azul claro, azul escuro ou cinza. Também é possível encontrar escrita em vermelho na página de vagas.
+            <br>
+            <h3>Motivo das cores?</h3>
+            Por se tratar de uma plataforma de empregos, voltada ao público em que sua maioria procura por estágios e uma primeira oportunidade na área de tecnologia, usamos por base as cores do site da Faculdade de Tecnologia Fatec Franca, e também por se tratar de cores formais!
+            <div class="color-section">
+                <h3 id="secundarias">Cores Secundárias</h3>
+                <div class="color-blocks">
+                    <div class="color-block azul-claro">
+                        Azul Claro
+                        <span class="hex-code">#447bc4</span>
+                    </div>
+                    <div class="color-block azul-escuro">
+                        Azul Escuro
+                        <span class="hex-code">rgb(3,24,54)</span>
+                    </div>
+                    <div class="color-block cinza-claro">
+                        Cinza Claro
+                        <span class="hex-code">#747577</span>
+                    </div>
+                </div>
+            </div>
+            Nas nossas cores secundarias, temos azul claro na imagem de fundo das páginas home e sobre, enquanto nas páginas contato e depoimentos conta com fundo cinza, e na página vagas temos a cor azul escuro!
+            <br>Em todas as páginas, trouxemos imagens de fundo ilustrando um ambiente corporativo e tecnológico, com evidência em notebooks, celulares, tablets, e formas de conexão via internet com alguns icones já bem conhecidos na rede.
+            <h6><p style="margin-top: 40px; font-style: italic;">**Nota:** A Faculdade de Tecnologia Fatec Franca acima mencionada, não faz parte da organização direta deste projeto sendo apenas mencionada como exemplo, a página em questão trata-se de um trabalho acadêmico de alunos do curso de DSM da instituição.</p></h6>
+        </div>
+    </div>
+    
+    <script>
+        
+        document.querySelectorAll('.color-block').forEach(block => {
+            block.addEventListener('click', () => {
+                const hexCode = block.querySelector('.hex-code').textContent;
+                navigator.clipboard.writeText(hexCode);
+                alert(`Código HEX copiado: ${hexCode}`);
+            });
+        });
+    </script>
+
+</body>
+</html>

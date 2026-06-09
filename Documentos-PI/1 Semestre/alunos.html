@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Visual - Alunos Responsáveis</title>
+    <style>
+       
+        :root {
+            --cor-primaria: #B20000; 
+            --cor-fundo-claro: #FFFFFF; 
+            --cor-texto-principal: #000000; 
+            --cor-azul-claro: #447bc4; 
+            --cor-azul-escuro: rgb(3, 24, 54); 
+            --cor-cinza-claro: #747577; 
+            --cor-borda-menu: #DDDDDD;
+        }
+
+        body {
+            font-family: sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-claro);
+            color: var(--cor-texto-principal);
+        }
+
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        .sidebar {
+            width: 280px;
+            background-color: var(--cor-fundo-claro); 
+            padding: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+            border-right: 1px solid var(--cor-borda-menu);
+        }
+
+        .sidebar h2 {
+            color: var(--cor-texto-principal);
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--cor-primaria); 
+            padding-bottom: 5px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: var(--cor-texto-principal);
+            padding: 10px 0;
+            font-size: 0.95em;
+            transition: all 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .sidebar .active {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            background-color: #ffebeb; 
+            padding: 10px 10px;
+            margin: 0 -10px;
+            border-radius: 4px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 40px 60px;
+            background-color: #f8f8f8; 
+        } 
+
+        .content h1 {
+            font-size: 2em;
+            color: var(--cor-texto-principal);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--cor-borda-menu);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h4>PLATAFORMA DE EMPREGOS</h4>
+            
+            <p style="text-transform: uppercase; font-size: 0.8em; color: var(--cor-azul-claro);">Estrutura</p>
+            <a href="index.html">Nosas Cores</a>
+            <a href="proposito.html">Propósito</a>
+            <a href="motivacoes.html"> Motivações</a>
+            <a href="documentacao.html">Documentação</a>
+            <a href="alunos.html">Alunos Responsáveis</a>
+            
+       
+        </div>
+
+        <div class="content">
+            <h1>🧑‍💻 PROJETO INTERDISCIPLINAR - 1º
+ SEMESTRE  DESENVOLVIMENTO DE SOFTWARE MULTIPLATAFORMA</h1>
+<br>
+            
+
+                <center><h1>TEMA - PLATAFORMA DE EMPREGOS</h1></center>
+            
+           <div>
+          <center>  <h3>ALEX GONÇALVES CINTRA</h3>
+
+            Responsável pela página, SOBRE.
+            <br>
+            <br>
+            <h3>DANIEL LINCON BENDER DOS SANTOS REIS</h3>
+            Responsável pela página, CONTATO.
+            <br>
+            <br>
+            <h3>GABRIEL MORETI OLIVEIRA</h3>
+            Responsável pela, ESTRUTURA, BASE e NAVBAR.
+            <br>
+            <br>
+            <h3>THIAGO HENRIQUE VIEIRA</h3>
+            Responsável pela página, INICIAL.
+            <br>
+            <br>
+            <h3>WALDIRENE APARECIDA DE SOUZA MORAIS</h3>
+            Responsável pela página, VAGAS e OPORTUNIDADES.
+            </center>
+            </div>
+    </div>
+</body>
+</html>

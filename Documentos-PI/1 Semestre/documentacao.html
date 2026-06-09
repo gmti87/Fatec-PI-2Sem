@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Visual - Documentação</title>
+    <style>
+       
+        :root {
+            --cor-primaria: #B20000; 
+            --cor-fundo-claro: #FFFFFF; 
+            --cor-texto-principal: #000000; 
+            --cor-azul-claro: #447bc4; 
+            --cor-azul-escuro: rgb(3, 24, 54); 
+            --cor-cinza-claro: #747577; 
+            --cor-borda-menu: #DDDDDD;
+        }
+
+        body {
+            font-family: sans-serif; 
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-claro);
+            color: var(--cor-texto-principal);
+        }
+
+        
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        
+        .sidebar {
+            width: 280px;
+            background-color: var(--cor-fundo-claro); 
+            padding: 30px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+            border-right: 1px solid var(--cor-borda-menu);
+        }
+
+        .sidebar h2 {
+            color: var(--cor-texto-principal);
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--cor-primaria); 
+            padding-bottom: 5px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: var(--cor-texto-principal);
+            padding: 10px 0;
+            font-size: 0.95em;
+            transition: all 0.2s;
+        }
+
+        .sidebar a:hover {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .sidebar .active {
+            color: var(--cor-primaria);
+            font-weight: bold;
+            background-color: #ffebeb; 
+            padding: 10px 10px;
+            margin: 0 -10px;
+            border-radius: 4px;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 40px 60px;
+            background-color: #f8f8f8; 
+        } 
+
+        .content h1 {
+            font-size: 2em;
+            color: var(--cor-texto-principal);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--cor-borda-menu);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h4>PLATAFORMA DE EMPREGOS</h4>
+            
+            <p style="text-transform: uppercase; font-size: 0.8em; color: var(--cor-azul-claro);">Estrutura</p>
+            <a href="index.html">Nosas Cores</a>
+            <a href="proposito.html">Propósito</a>
+            <a href="motivacoes.html"> Motivações</a>
+            <a href="documentacao.html">Documentação</a>
+            <a href="alunos.html">Alunos Responsáveis</a>
+            
+           
+        </div>
+
+        <div class="content">
+            <h1>📑 Documentação do Projeto</h1>
+
+            <p>Relatório de Design – Projeto Interdisciplinar - DSM 1º Semestre - Fatec Franca: Plataforma de Empregos <br><br>
+1. Introdução:
+O presente relatório tem como objetivo apresentar a análise de design da plataforma de empregos desenvolvida para o Projeto Fatec. O site foi criado utilizando as tecnologias HTML, CSS e JavaScript, com foco em uma interface moderna, responsiva e de fácil navegação. A proposta principal é conectar alunos e empresas, oferecendo uma experiência intuitiva e visualmente agradável.
+<br><br>2. Público-alvo:
+O público-alvo da plataforma são alunos, recém-formados e empresas parceiras que buscam oportunidades de emprego ou desejam contratar novos talentos. Dessa forma, o design foi pensado para ser simples, direto e acessível, transmitindo profissionalismo e confiança.
+<br><br>3. Identidade Visual:
+A identidade visual da plataforma foi construída com base em cores institucionais e elementos que remetem à tecnologia e conectividade.
+<br><br>• Cores: predominância do vermelho (#B20000) no cabeçalho e rodapé, transmitindo energia e destaque, combinada com tons de azul, branco, cinza claro e preto, para equilíbrio visual.
+<br><br>• Tipografia: fontes sam serif foram utilizadas para facilitar a leitura e garantir modernidade. Títulos em negrito destacam seções importantes, enquanto textos descritivos mantêm legibilidade.
+<br><br>• Ícones: utilizados para representar informações de forma visual, como localização, salário e requisitos nas vagas, contribuindo para uma leitura mais dinâmica.
+<br><br>• Logotipo: o logotipo no canto superior esquerdo representa a identidade institucional do Projeto Fatec, reforçando a credibilidade da plataforma.
+<br><br>4. Layout e Estrutura das Páginas:
+O layout segue uma estrutura organizada e funcional. O cabeçalho possui o logotipo à esquerda e o menu de navegação à direita, facilitando o acesso às principais seções do site: Home, Sobre, Contato, Vagas e Depoimentos.
+Na página inicial, há uma imagem de destaque com texto sobreposto, dando boas-vindas ao usuário e explicando o propósito da plataforma. Em seguida, a seção de vagas apresenta cards bem definidos, contendo informações essenciais como título, empresa, local, remuneração e requisitos. Os botões de 'Candidatar-se' em vermelho proporcionam contraste e atraem a atenção do usuário.
+<br><br>5. Navegação e Usabilidade:
+A navegação foi planejada para ser simples e intuitiva. O menu fixo no topo permite que o usuário acesse qualquer parte do site rapidamente. O campo de busca e o filtro por localidade na seção de vagas oferecem praticidade e melhoram a experiência de uso.
+Além disso, o site foi desenvolvido com técnicas de responsividade em CSS, garantindo boa visualização em diferentes dispositivos e tamanhos de tela.
+<br><br>6. Conclusão:
+O design da plataforma de empregos do Projeto Interdisciplinar alia estética e funcionalidade, transmitindo credibilidade e facilitando a interação entre alunos e empresas. As escolhas de cores, tipografia e estrutura contribuem para uma navegação agradável e eficaz. O uso de HTML, CSS e JavaScript permitiu criar um ambiente digital moderno e acessível, alinhado com as necessidades do público-alvo.</p>
+            
+            <h3>Estrutura de Código</h3>
+            <ul>
+                <li><strong>Linguagens:</strong> HTML, CSS, JavaScript</li>
+          
+            </ul>
+
+            <h3>Link para Repositório</h3>
+            <p>O código-fonte completo e a documentação técnica detalhada podem ser encontrados no nosso repositório:</p>
+            <p><a href="https://gmti87.github.io/Fatec-PI/index.html" target="_blank">Acessar Repositório do Projeto no GitHub</a></p>
+
+            </div>
+    </div>
+</body>
+</html>
