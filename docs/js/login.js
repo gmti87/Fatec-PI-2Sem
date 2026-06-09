@@ -49,9 +49,9 @@ async function fazerLogin() {
 }
 
 function newuser() {
-    window.location.href = "/../pages/escolha-usuario.html";
+    window.location.href = "/pages/escolha-usuario.html";
 }
 
 function forgotpsw() {
-    window.location.href = "/../pages/nova-senha.html";
+    window.location.href = "/pages/nova-senha.html";
 }
