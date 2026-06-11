@@ -76,6 +76,13 @@ VALUES('Ana Santos', 'ana.santos@email.com', 'senhaAna123', 'Estudante', '2024-0
 ('Camila Teixeira', 'camila.teixeira@email.com', 'camilaT2025', 'Recrutador', '2026-06-07'),
 ('Renato Moreira', 'renato.moreira@email.com', 'renatoMpass', 'Recrutador', '2026-06-07');
 
+INSERT INTO usuario (nome, email, senha, tipo, status) VALUES
+('Ana Silva', 'ana.silva@email.com', 'senha123', 'Estudante', 'A'),
+('Carlos Souza', 'carlos.souza@email.com', 'senha456', 'Recrutador', 'A'),
+('Mariana Costa', 'mariana.costa@email.com', 'senha789', 'Especialista', 'I'),
+('João Pereira', 'joao.pereira@email.com', 'senha321', 'Estudante', 'A'),
+('Fernanda Lima', 'fernanda.lima@email.com', 'senha654', 'Recrutador', 'A');
+
 -- Observação quando se faz um cadastro pelo frontend a senha já é gerada com hash 
 
 -- Formacao
@@ -113,6 +120,13 @@ VALUES('Analise e Desenvolvimento de Sistemas', 'TechVagas College', 3, '2024-02
 ('GE', 'Fatec', 2, '2026-08-06', '2028-07-31', 'Noite', 29),
 ('GE', 'Fatec', 1, '2026-02-06', '2029-12-31', 'Manha', 30);
 
+INSERT INTO formacao (curso, instituicao, semestre, data_inicio, data_termino, turno, fk_id_usuario) VALUES
+('Engenharia de Software', 'USP', 6, '2022-02-01', '2026-12-15', 'Noturno', 1),
+('Administração', 'FGV', 4, '2023-02-01', '2027-12-15', 'Matutino', 2),
+('Psicologia', 'PUC-SP', 8, '2020-02-01', '2025-12-15', 'Integral', 3),
+('Ciência da Computação', 'Unicamp', 2, '2025-02-01', '2029-12-15', 'Noturno', 4),
+('Marketing', 'Mackenzie', 5, '2021-02-01', '2025-12-15', 'Vespertino', 5);
+
 -- Endereco
 
 INSERT INTO endereco (cep, logradouro, complemento, numero, bairro, cidade, estado, fk_id_usuario)
@@ -146,6 +160,13 @@ VALUES('14400-001','Rua das Flores','Apto 101','10','Centro','Franca','SP',1),
 ('14440-011','Rua Z','Casa','200','Centro','Restinga','SP',28),
 ('14440-012','Av Brasil','Apto 19','270','Centro','Restinga','SP',29),
 ('14410-006','Rua Alpha','Casa','280','Centro','Cristais Paulista','SP',30);
+
+INSERT INTO Endereco (cep, logradouro, complemento, numero, bairro, cidade, estado, fk_id_usuario) VALUES
+('14400-000', 'Rua das Flores', 'Apto 12', '123', 'Centro', 'Franca', 'SP', 1),
+('01000-000', 'Av. Paulista', 'Sala 45', '2000', 'Bela Vista', 'São Paulo', 'SP', 2),
+('22290-000', 'Rua Voluntários da Pátria', 'Casa', '45', 'Botafogo', 'Rio de Janeiro', 'RJ', 3),
+('13083-970', 'Av. Albert Einstein', 'Bloco B', '100', 'Cidade Universitária', 'Campinas', 'SP', 4),
+('04538-132', 'Rua Joaquim Floriano', 'Cobertura', '789', 'Itaim Bibi', 'São Paulo', 'SP', 5);
 
 -- Vaga
 
