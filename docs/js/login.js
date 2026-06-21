@@ -1,4 +1,4 @@
-const BASE = "/Fatec-PI-2Sem";
+const BASE = "https://gmti87.github.io/Fatec-PI-2Sem/";
 
 //https://github.com/gmti87/Fatec-PI-2Sem/
 
