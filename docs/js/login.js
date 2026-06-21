@@ -49,7 +49,7 @@ async function fazerLogin() {
 }
 
 function newuser() {
-    window.location.href = "../../pages/escolha-usuario.html";
+    window.location.href = "/pages/escolha-usuario.html";
 }
 
 function forgotpsw() {
