@@ -1,3 +1,7 @@
+const BASE = "/Fatec-PI-2Sem";
+
+//https://github.com/gmti87/Fatec-PI-2Sem/
+
 async function fazerLogin() {
 
     const email = document.getElementById("userEmail").value;
@@ -49,7 +53,7 @@ async function fazerLogin() {
 }
 
 function newuser() {
-    window.location.href = "../Fatec-PI-2Sem/pages/escolha-usuario.html";
+    window.location.href = `${BASE}/pages/escolha-usuario.html`;
 }
 
 function forgotpsw() {
